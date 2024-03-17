@@ -1,0 +1,60 @@
+
+******************** Copy Assignment Operator ********************
+list1 ( 3 nodes): 12    34    21    
+list2 ( 3 nodes): 12    3    21    
+list3 ( 4 nodes): 12    3    21    4    
+list1=list2=list3 ( 4 nodes): 12    3    21    4    
+
+******************** Equality ********************
+list1 ( 3 nodes): 12    34    21    
+list2 ( 3 nodes): 12    3    21    
+list3 ( 4 nodes): 12    3    21    4    
+list1==list1 is true
+list1!=list1 is false
+list1==list2 is false
+list1!=list2 is true
+list2==list3 is false
+list2!=list3 is true
+
+******************** Simple Add ********************
+list1 ( 3 nodes): 12    34    21    
+list1+list1 ( 6 nodes): 12    34    21    12    34    21    
+
+******************** Compound Add 1 ********************
+list1 ( 3 nodes): 12    34    21    
+list1+=list1 ( 6 nodes): 12    34    21    12    34    21    
+
+******************** Compound Add 2 ********************
+list1 ( 3 nodes): 12    34    21    
+list2 ( 3 nodes): 12    34    21    
+list1+=list2 ( 6 nodes): 12    34    21    12    34    21    
+
+******************** Compound Add 3 ********************
+list1 ( 3 nodes): 12    34    21    
+list2 ( 4 nodes): 12    3    21    4    
+list1+=list2+=list1 (10 nodes): 12    34    21    12    3    21    4    12    34    21    
+
+******************** Negation ********************
+list1 ( 3 nodes): 12    34    21    
+list2 ( 3 nodes): -12    -34    -21    
+
+******************** Prefix Pop Back ********************
+list1 ( 3 nodes): 12    34    21    
+--list1 ( 2 nodes): 12    34    
+----list1 ( 0 nodes): 
+--list1 ( 0 nodes): 
+
+******************** Postfix Pop Back ********************
+list1 ( 3 nodes): 12    34    21    
+list1-- returned ( 3 nodes): 12    34    21    
+Final list1 ( 2 nodes): 12    34    
+
+******************** Non-const Subscript ********************
+list1 ( 3 nodes): 12    34    21    
+list1[0] = 12
+list1[1] = 34
+
+******************** Const Subscript ********************
+const list2 ( 3 nodes): 12    34    21    
+list2[0] = 12
+list2[1] = 34
